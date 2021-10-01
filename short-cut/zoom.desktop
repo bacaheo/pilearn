@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=Zoom
+GenericName=Zoom
+Comment=Họp trực tuyến
+Exec=chromium-browser --new-window https://zoom.us/join
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=zalo
+Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml_xml;x-scheme-handler/http;x-scheme-handler/https;
+StartupNotify=true
+Actions=NewWindow;Incognito;TempProfile;
+X-AppInstall-Package=chromium-browser
