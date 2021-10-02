@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=Cloud connect
+GenericName=Cloud connect
+Comment=Kết nối đám mây
+Exec=xfreerdp /v:{HOST_PORT} /u:{USERNAME} /p:{PASSWORD} /shell:"||{APP}" /cert-ignore +fonts -aero /gfx:AVC444 /frame-ack:1 /video +async-input +async-channels /sound:sys:pulse,format:0xA106,quality:high,rate:44100,latency:50 /audio-mode:0 /bpp:16 +home-drive +drives /drive:"/home/pi/Desktop" -themes /size:100% -decorations /dynamic-resolution +offscreen-cache +bitmap-cache /codec-cache:rfx +window-drag /compression-level:1 +gfx-progressive +gfx-thin-client +multitransport +clipboard
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=cloud
+Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml_xml;x-scheme-handler/http;x-scheme-handler/https;
+StartupNotify=true
+Actions=NewWindow;Incognito;TempProfile;
+X-AppInstall-Package=chromium-browser
